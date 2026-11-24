@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; font-size: 16px; line-height: 1.5; margin: 20px; color: #111; background: white; }
+main { max-width: 850px; margin: 0 auto; }
+h1 { font-size: 1.4rem; }
+input, select, button, textarea { font: inherit; }
+input[type=file] { max-width: 100%; }
+input[type=checkbox] { width: 18px; height: 18px; vertical-align: middle; }
+select, button { min-height: 40px; }
+label[for=version], label[for=save-file] { display: block; margin-bottom: 5px; }
+textarea { display: block; box-sizing: border-box; width: 100%; height: 420px; padding: 10px; margin-top: 5px; font-family: monospace; font-size: 16px; resize: vertical; }
+button { padding: 5px 12px; }
+#status, #warning, #copy-status { overflow-wrap: anywhere; }
+[data-state=error], #warning { color: #9b3400; }
+small { color: #444; }
+@media (max-width: 500px) { body { margin: 12px; } }

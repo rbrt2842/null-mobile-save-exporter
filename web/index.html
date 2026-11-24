@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Convert a Pokémon Null save into text for your calculator. Your save stays on your device.">
+  <title>Null Save Export</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./app.mjs"></script>
+</head>
+<body>
+  <main>
+    <h1>Null save converter</h1>
+    <p>Choose your in-game <code>.sav</code>, then copy the text into your calculator.</p>
+    <p>
+      <label for="version">Game version</label>
+      <select id="version">
+        <option value="1.2.6">Null 1.2.6</option>
+        <option value="1.2.4">Null 1.2.4</option>
+      </select>
+    </p>
+    <p>
+      <label for="save-file">Save file</label>
+      <input id="save-file" type="file" accept=".sav,application/octet-stream" disabled>
+    </p>
+    <p><label><input id="include-items" type="checkbox" checked disabled> Include held items</label></p>
+    <p id="status" role="status" aria-live="polite">Loading game data…</p>
+    <p id="warning" hidden></p>
+    <label for="output">Calculator import</label>
+    <textarea id="output" readonly spellcheck="false" autocapitalize="off" wrap="off" placeholder="Import text will appear here."></textarea>
+    <p><button id="copy" type="button" disabled>Copy to clipboard</button></p>
+    <p id="copy-status" role="status" aria-live="polite">You can also select and copy the text yourself.</p>
+    <small>Party and boxes 1–12. Your save stays on your device. Export format based on Baat’s script.</small>
+  </main>
+</body>
+</html>
