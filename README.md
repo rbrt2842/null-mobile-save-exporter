@@ -1,5 +1,7 @@
 # Null mobile save exporter
 
+**Use the converter:** https://rbrt2842.github.io/null-mobile-save-exporter/
+
 Choose an exported Pokémon Null save and copy the generated text into your
 calculator. The page processes saves on your device; files are never uploaded.
 
